@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculoDeBotao</title>
+</head>
+<body>
+    <h1>calculo do troco</h1>
+    <button onclick="bloco1()">troco</button>
+    <script>
+        function bloco1(){
+           var produto = window.prompt('Que produto você está comprando:')
+           var valor = Number(window.prompt(`Qual o valor do ${produto}: `))
+           var dado = Number(window.prompt(`Qual valor voce deu para pagar pelo ${produto}: `))
+           var troco = dado - valor
+           window.alert(`O valor que tem que ser dao de troco é ${troco}`)
+
+        }
+
+    </script> 
+
+</body>
+</html>
